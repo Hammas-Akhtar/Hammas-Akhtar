@@ -52,13 +52,14 @@
 
   <header class="bg-gray-900 shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-yellow-400">Hammas Akhtar</h1>
+      <h1 class="text-2xl font-bold text-white-400">Portfolio</h1>
       <button id="menu-btn" class="text-white md:hidden">
         <i class="fas fa-bars text-2xl"></i>
       </button>
       <nav class="hidden md:flex space-x-6 text-sm">
         <a href="#about" class="hover:text-yellow-400">About</a>
         <a href="#skills" class="hover:text-yellow-400">Skills</a>
+        <a href="#certificates" class="hover:text-yellow-400">Certificates</a>
         <a href="#projects" class="hover:text-yellow-400">Projects</a>
         <a href="#contact" class="hover:text-yellow-400">Contact</a>
       </nav>
@@ -66,128 +67,318 @@
     <nav id="mobile-menu" class="md:hidden absolute right-4 top-16 z-50 rounded-lg shadow-lg text-sm bg-gray-800 bg-opacity-90 px-4 py-4">
       <a href="#about" class="block text-white hover:text-yellow-400">About</a>
       <a href="#skills" class="block text-white hover:text-yellow-400">Skills</a>
+      <a href="#certificates" class="block text-white hover:text-yellow-400">Certificate</a>
       <a href="#projects" class="block text-white hover:text-yellow-400">Projects</a>
       <a href="#contact" class="block text-white hover:text-yellow-400">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-16 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
-    <img src="my_profile.jpeg" alt="Hammas Akhtar" class="w-60 h-60 mx-auto rounded-full border-4 border-yellow-400 mb-4">
-    <h1 class="text-4xl font-bold text-white">Hammas Akhtar</h1>
-    <p class="text-xl font-medium text-gray-400">Data Enthusiast with Analytical Skills</p>
-    <p class="mt-2 text-lg text-yellow-300">Analyzing patterns. Predicting outcomes. Creating value.</p>
-    <p class="mt-1 text-gray-300">
-      I use <span class="text-yellow-400">SQL</span>, <span class="text-yellow-400">Python</span>,
-      <span class="text-yellow-400">Excel</span>, and <span class="text-yellow-400">Power BI</span> to extract insights.
+<!-- Hero Section -->
+<section class="text-center py-16 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+    
+    <!-- Left Text Content -->
+    <div class="md:w-1/2 text-left pl-6 md:pl-20">
+      <p class="text-lg text-yellow-300 mb-2">Hello It's Me</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Hammas Akhtar</h1>
+      <h2 class="text-2xl md:text-2xl font-semibold mb-4">
+        And I'm a <span class="text-yellow-400">Data Enthusiast with Analytical Skills</span>
+      </h2>
+      
+      <p class="text-gray-300 leading-relaxed">
+          I'm a passionate <span class="text-yellow-400">Data Analyst Learner</span> who enjoys diving deep into datasets and uncovering the hidden stories within numbers. I have hands-on experience using <span class="text-yellow-400">Python</span>, <span class="text-yellow-400">SQL</span>, <span class="text-yellow-400">Excel</span>, and <span class="text-yellow-400">Power BI</span> to perform analysis, automate reports, and build interactive dashboards.<br><br>
+        </p>
+
+      <!-- Download Button -->
+      <div class="mb-6">
+        <a href="Hammas_Akhtar_CV.pdf" download target="_blank" class="bg-yellow-400 hover:bg-yellow-300 hover:scale-105 transition-transform duration-300 text-gray-900 font-semibold px-6 py-2 rounded inline-block">
+          Download Resume
+        </a>
+      </div>
+    </div>
+    
+    <!-- Right Image -->
+    <div class="md:w-1/2 flex justify-end pr-6 md:pr-24 lg:pr-32">
+      <img src="my_profile.jpeg" alt="Hammas Akhtar" class="w-72 h-72 object-cover rounded-full border-4 border-yellow-400 shadow-lg" />
+    </div>
+  </div>
+
+  <!-- Down Arrow Centered with Blink -->
+  <div class="flex justify-center mt-10">
+    <a href="#about" class="text-yellow-400 text-3xl animate-pulse">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6 bg-gray-950">
+  <div class="container mx-auto">
+    
+    <!-- Centered Heading -->
+    <!-- Section Heading -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-3">
+        Get to Know More
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Learn about my background, education, and what drives my passion for data analytics.
+      </p>
+    </div>
+
+    <!-- Content Row -->
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      
+      <!-- Left Image -->
+      <div class="md:w-1/2 flex justify-start pl-6 md:pl-20" data-aos="fade-right">
+        <img src="about.jpeg" alt="Hammas Akhtar" class="w-72 h-72 object-cover rounded-xl border-4 border-yellow-400 shadow-lg" />
+      </div>
+
+      <!-- Right Text -->
+      <div class="md:w-1/2 text-left pr-6 md:pr-20" data-aos="fade-up">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-400">About Me</h3>
+        <p class="text-gray-300 leading-relaxed mb-6">
+        I'm currently pursuing a degree in Computer Science at Sindh Madressatul Islam University (SMIU). I am passionate about data and continuously sharpening my analytical skills. My journey has equipped me with a strong foundation in data analysis using <span class="text-yellow-400">SQL</span>, <span class="text-yellow-400">Python</span>, and <span class="text-yellow-400">Excel</span>, along with visualization tools like <span class="text-yellow-400">Power BI</span>. I love transforming raw data into meaningful insights that drive informed decision-making.
+        
+      </p>
+        <div class="mt-6 flex space-x-4 text-2xl">
+          <a href="https://linkedin.com/in/hammas-akhtar" target="_blank" class="text-blue-400 hover:text-yellow-300"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:hammassaeed123@gmail.com" class="text-blue-400 hover:text-yellow-300"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/Hammas-Akhtar" target="_blank" class="text-blue-400 hover:text-yellow-300"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/hammas_akhtar_110" target="_blank" class="text-blue-400 hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 px-6 bg-gray-900 text-white">
+  <div class="container mx-auto">
+
+    <!-- Section Header -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-3">
+        Explore My Technical Skills
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Here are the tools and technologies I use to turn raw data into valuable insights.
+      </p>
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="flex flex-wrap justify-center gap-8 md:gap-12" data-aos="zoom-in-up">
+
+      <!-- Skill Card -->
+      <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl w-52 text-center hover:scale-105 transform transition duration-300">
+        <i class="fa-brands fa-python text-5xl text-yellow-400 mb-3"></i>
+        <h3 class="text-xl font-semibold mb-1">Python</h3>
+        <p class="text-sm text-gray-400">Data cleaning & analysis</p>
+      </div>
+
+      <!-- Skill Card -->
+      <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl w-52 text-center hover:scale-105 transform transition duration-300">
+        <i class="fa-solid fa-database text-5xl text-yellow-400 mb-3"></i>
+        <h3 class="text-xl font-semibold mb-1">SQL</h3>
+        <p class="text-sm text-gray-400">Querying databases</p>
+      </div>
+
+      <!-- Skill Card -->
+      <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl w-52 text-center hover:scale-105 transform transition duration-300">
+        <i class="fa-solid fa-chart-column text-5xl text-yellow-400 mb-3"></i>
+        <h3 class="text-xl font-semibold mb-1">Power BI</h3>
+        <p class="text-sm text-gray-400">Data visualization</p>
+      </div>
+
+      <!-- Skill Card -->
+      <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl w-52 text-center hover:scale-105 transform transition duration-300">
+        <i class="fa-solid fa-file-excel text-5xl text-yellow-400 mb-3"></i>
+        <h3 class="text-xl font-semibold mb-1">Excel</h3>
+        <p class="text-sm text-gray-400">Data wrangling & reporting</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Certificates Section -->
+<section id= "certificates" class="py-16 px-6 bg-gray-900">
+  <div class="container mx-auto max-w-6xl text-center">
+    <h2 class="text-3xl font-bold text-yellow-300 mb-3" data-aos="fade-up">Certificates</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-10" data-aos="fade-up" data-aos-delay="100">
+      These certifications reflect my dedication to developing expertise in data analytics.
     </p>
-    <div class="mt-4">
-      <a href="Hammas_Akhtar_CV.pdf" download target="_blank" class="bg-yellow-400 hover:bg-yellow-300 hover:scale-105 transition-transform duration-300 text-gray-900 font-semibold px-6 py-2 rounded">
-        Download Resume
-      </a>
+
+    <!-- Certificate Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div data-aos="fade-up" data-aos-delay="200"
+           class="group bg-gray-800 p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition duration-300"
+           onclick="window.open('CertificateOfCompletion_Career_Essentials.pdf', '_blank')">
+        <div class="text-yellow-400 text-3xl mb-3"><i class="fas fa-certificate"></i></div>
+        <h3 class="text-lg font-semibold text-yellow-300">Career Essentials in Data Analysis</h3>
+        <p class="text-sm text-gray-400">Microsoft & LinkedIn — Feb 2025</p>
+        <p class="text-xs text-blue-400 mt-2 group-hover:underline">Click to View</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div data-aos="fade-up" data-aos-delay="300"
+           class="group bg-gray-800 p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition duration-300"
+           onclick="window.open('CertificateOfCompletion_Learning_Data_Analytics.pdf', '_blank')">
+        <div class="text-yellow-400 text-3xl mb-3"><i class="fas fa-certificate"></i></div>
+        <h3 class="text-lg font-semibold text-yellow-300">Learning Data Analytics: Foundations</h3>
+        <p class="text-sm text-gray-400">LinkedIn — Feb 2025</p>
+        <p class="text-xs text-blue-400 mt-2 group-hover:underline">Click to View</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div data-aos="fade-up" data-aos-delay="400"
+           class="group bg-gray-800 p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition duration-300"
+           onclick="window.open('CertificateOfCompletion_Learning_Data_Analytics2.pdf', '_blank')">
+        <div class="text-yellow-400 text-3xl mb-3"><i class="fas fa-certificate"></i></div>
+        <h3 class="text-lg font-semibold text-yellow-300">Learning Data Analytics Part 2</h3>
+        <p class="text-sm text-gray-400">LinkedIn — Feb 2025</p>
+        <p class="text-xs text-blue-400 mt-2 group-hover:underline">Click to View</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div data-aos="fade-up" data-aos-delay="500"
+           class="group bg-gray-800 p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition duration-300"
+           onclick="window.open('Python.pdf', '_blank')">
+        <div class="text-yellow-400 text-3xl mb-3"><i class="fas fa-certificate"></i></div>
+        <h3 class="text-lg font-semibold text-yellow-300">Python for Beginners</h3>
+        <p class="text-sm text-gray-400">Simplilearn — Feb 2025</p>
+        <p class="text-xs text-blue-400 mt-2 group-hover:underline">Click to View</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div data-aos="fade-up" data-aos-delay="600"
+           class="group bg-gray-800 p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition duration-300"
+           onclick="window.open('Business_Analytics_with_Excel.pdf', '_blank')">
+        <div class="text-yellow-400 text-3xl mb-3"><i class="fas fa-certificate"></i></div>
+        <h3 class="text-lg font-semibold text-yellow-300">Business Analytics with Excel</h3>
+        <p class="text-sm text-gray-400">Microsoft — Jan 2025</p>
+        <p class="text-xs text-blue-400 mt-2 group-hover:underline">Click to View</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div data-aos="fade-up" data-aos-delay="700"
+           class="group bg-gray-800 p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition duration-300"
+           onclick="window.open('SQL.pdf', '_blank')">
+        <div class="text-yellow-400 text-3xl mb-3"><i class="fas fa-certificate"></i></div>
+        <h3 class="text-lg font-semibold text-yellow-300">Introduction to SQL</h3>
+        <p class="text-sm text-gray-400">Simplilearn — Jul 2024</p>
+        <p class="text-xs text-blue-400 mt-2 group-hover:underline">Click to View</p>
+      </div>
+
+      <!-- Card 7 -->
+      <div data-aos="fade-up" data-aos-delay="800"
+           class="group bg-gray-800 p-5 rounded-xl shadow-md cursor-pointer hover:shadow-lg transition duration-300"
+           onclick="window.open('CertificateOfCompletion_Introduction_to_Career_Skills.pdf', '_blank')">
+        <div class="text-yellow-400 text-3xl mb-3"><i class="fas fa-certificate"></i></div>
+        <h3 class="text-lg font-semibold text-yellow-300">Career Skills in Data Analytics</h3>
+        <p class="text-sm text-gray-400">LinkedIn — Jan 2025</p>
+        <p class="text-xs text-blue-400 mt-2 group-hover:underline">Click to View</p>
+      </div>
     </div>
-    <div class="mt-8 flex justify-center">
-      <a href="#about" class="animate-bounce text-yellow-400 text-xl">
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </div>
-  </section>
+  </div>
+</section>
 
 
-  <!-- About Section -->
-  <section id="about" class="py-16 px-6 bg-gray-950">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6 text-yellow-300" data-aos="fade-up">Get to Know More</h2>
-      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-        <div class="w-40" data-aos="fade-up">
-          <img src="about.jpeg" alt="About" class="rounded-xl shadow-lg w-full h-auto object-cover border-4 border-yellow-400 mb-4" />
-        </div>
-        <div class="max-w-xl text-lg" data-aos="fade-up">
-          <h3 class="text-2xl font-semibold mb-2 text-yellow-400">About Me</h3>
-          <p class="text-gray-300">
-            I’m a B.S. Computer Science student at Sindh Madressatul Islam University. I love transforming raw data into actionable insights.
-            With a passion for Python, SQL, and Excel, I'm building my path into the world of data analysis.
+ <!-- Projects Section -->
+<section id="projects" class="py-16 px-6 bg-gray-950">
+  <div class="container mx-auto max-w-6xl">
+
+    <!-- Section Heading with Line -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-3">
+        Browse My Recent Projects
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Here are some of the data analysis projects I've built to visualize and interpret real-world insights.
+      </p>
+    </div>
+
+    <!-- Project Card -->
+    <div class="flex justify-center">
+      <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden max-w-md w-full" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Image Full (not cropped) -->
+        <img src="my_analysis.jpg" alt="Coffee Shop Sales Dashboard"
+             class="w-full h-auto object-contain bg-black" />
+
+        <!-- Content -->
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold text-yellow-300 mb-2">Coffee Shop Sales Dashboard</h3>
+          <p class="text-sm text-gray-300 mb-4">
+            An Excel-based dashboard highlighting top-selling products, busiest hours, and store performance using Power Query.
           </p>
-          <div class="mt-4 flex space-x-4 text-2xl">
-            <a href="https://linkedin.com/in/hammas-akhtar" target="_blank" class="text-blue-400"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:hammassaeed123@gmail.com" class="text-blue-400"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/Hammas-Akhtar" target="_blank" class="text-blue-400"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/hammas_akhtar_110" target="_blank" class="text-blue-400"><i class="fab fa-instagram"></i></a>
-          </div>
+
+          <!-- GitHub Button -->
+          <a href="https://github.com/Hammas-Akhtar/Coffee-Shop-Sales-Analsis" target="_blank"
+             class="inline-block bg-yellow-400 text-gray-900 font-semibold px-5 py-2 rounded hover:bg-yellow-300 transition">
+            View on GitHub
+          </a>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-16 bg-gray-900 text-center">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-8 text-yellow-300" data-aos="zoom-in">Explore My Technical Skills</h2>
-      <div class="flex justify-center gap-10 flex-wrap">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md" data-aos="flip-up">
-          <i class="fa-brands fa-python text-3xl text-yellow-400"></i>
-          <p class="mt-2">Python</p>
+  </div>
+</section>
+
+
+
+ <!-- Contact Section -->
+<section id="contact" class="py-20 px-4 bg-gray-900 text-center">
+  <div class="container mx-auto max-w-4xl">
+    
+    <!-- Section Heading -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-3">Let's Connect</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Have a question or want to work together? Drop me a message and I’ll get back to you as soon as possible.
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contactForm" class="bg-gray-800 px-8 py-10 rounded-xl shadow-lg w-full" data-aos="fade-up">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="text-left">
+          <label for="name" class="block mb-2 text-gray-300">Your Name</label>
+          <input type="text" id="name" name="name" required
+            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" />
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md" data-aos="flip-up">
-          <i class="fa-solid fa-chart-column text-3xl text-yellow-400"></i>
-          <p class="mt-2">Power BI</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md" data-aos="flip-up">
-          <i class="fa-solid fa-database text-3xl text-yellow-400"></i>
-          <p class="mt-2">SQL</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md" data-aos="flip-up">
-          <i class="fa-solid fa-file-excel text-3xl text-yellow-400"></i>
-          <p class="mt-2">Excel</p>
+        <div class="text-left">
+          <label for="email" class="block mb-2 text-gray-300">Email Address</label>
+          <input type="email" id="email" name="email" required
+            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" />
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-16 px-6 bg-gray-950">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8 text-yellow-300" data-aos="fade-up">Browse My Recent Projects</h2>
-      <div class="flex justify-center">
-        <div class="bg-gray-800 p-6 rounded-lg max-w-md shadow-md" data-aos="fade-up">
-          <img src="my_analysis.jpg" alt="Coffee Shop Sales" class="rounded mb-4" />
-          <h3 class="text-xl font-semibold text-yellow-400">Coffee Shop Sales Dashboard</h3>
-          <p class="text-sm mt-2 mb-4 text-gray-300">
-            Built an interactive dashboard using Excel & Power Query to analyze top-selling items, peak hours & store performance.
-          </p>
-          <a href="https://github.com/Hammas-Akhtar/Coffee-Shop-Sales-Analsis" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
-        </div>
+      <div class="text-left mb-6">
+        <label for="message" class="block mb-2 text-gray-300">Your Message</label>
+        <textarea id="message" name="message" rows="5" required
+          class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 px-4 bg-gray-900 text-center">
-
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-6 text-yellow-300" data-aos="fade-up">Contact Me</h2>
-      <form id="contactForm" class="max-w-lg mx-auto bg-gray-800 px-6 py-10 rounded-lg shadow-md">
-
-
-        <div class="mb-4 text-left">
-          <label for="name" class="block mb-1">Name</label>
-          <input type="text" name="name" id="name" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 text-white" />
-        </div>
-        <div class="mb-4 text-left">
-          <label for="email" class="block mb-1">Email</label>
-          <input type="email" name="email" id="email" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 text-white" />
-        </div>
-        <div class="mb-4 text-left">
-          <label for="message" class="block mb-1">Message</label>
-          <textarea name="message" id="message" rows="4" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 text-white"></textarea>
-        </div>
-        <button type="submit" class="bg-yellow-400 text-gray-900 font-semibold px-6 py-2 rounded hover:bg-yellow-300 transition">Send</button>
-      </form>
-      <div id="success-message" class="hidden mt-4 text-green-400 font-semibold">
-        ✅ Your message was sent successfully!
+      <div class="text-center">
+        <button type="submit"
+          class="bg-yellow-400 text-gray-900 font-semibold px-8 py-2 rounded hover:bg-yellow-300 transition duration-300">
+          Send Message
+        </button>
       </div>
+    </form>
+
+    <!-- Success Message -->
+    <div id="success-message" class="hidden mt-6 text-green-400 font-semibold text-lg">
+      ✅ Your message was sent successfully!
     </div>
-  </section>
+  </div>
+</section>
+
 
   <footer class="text-center py-4 bg-gray-800 text-sm text-gray-400">
     <p>© 2025 Hammas Akhtar. All rights reserved.</p>
@@ -271,7 +462,11 @@
       });
     });
   });
+
+
 </script>
+
+
 
 
 
