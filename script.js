@@ -112,30 +112,29 @@
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
 
-  const updateActiveNav = () => {
-  const scrollPos = window.scrollY + 150;
+  const activeObserver = new IntersectionObserver((entries) => {
+  const visibleSections = entries
+    .filter(entry => entry.isIntersecting)
+    .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-  let currentSection = sections[0];
+  if (!visibleSections.length) return;
 
-  sections.forEach(section => {
-    if (scrollPos >= section.offsetTop) {
-      currentSection = section;
-    }
+  const activeId = visibleSections[0].target.id;
+
+  navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+
+    navLinks.forEach(l => l.classList.remove("active"));
+    link.classList.add("active");
+
+    closeMenu();
   });
-
-  navLinks.forEach(link => {
-    link.classList.toggle(
-      "active",
-      link.getAttribute("href") === `#${currentSection.id}`
-    );
-  });
-};
-
-window.addEventListener("scroll", throttleFrame(updateActiveNav), {
-  passive: true
 });
 
-updateActiveNav();
+}, {
+  threshold: [0.2, 0.4, 0.6, 0.8],
+  rootMargin: "-100px 0px -45% 0px"
+});
 
   sections.forEach((section) => activeObserver.observe(section));
 
